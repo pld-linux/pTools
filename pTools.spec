@@ -2,13 +2,13 @@ Summary:	Process Information Utilities
 Summary(pl):	Narzêdzie Informuj±ce o Procesach
 Name:		pTools
 Version:	0.1
-Release:	2
+Release:	3
 License:	GPL
 Group:		Applications/System
 #Source0:	http://www.cs.fsu.edu/~oberther/pTools/%{name}-%{version}.tar.gz
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	1b07f7ae2f3af3eb6ec12361e0a4d73c
-BuildRequires:	procps-devel
+BuildRequires:	procps-devel >= 3.1.11
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
