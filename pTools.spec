@@ -2,13 +2,14 @@ Summary:	Process Information Utilities
 Summary(pl):	Narzêdzie Informuj±ce o Procesach
 Name:		pTools
 Version:	0.1
-Release:	3
+Release:	4
 License:	GPL
 Group:		Applications/System
 #Source0:	http://www.cs.fsu.edu/~oberther/pTools/%{name}-%{version}.tar.gz
 Source0:	%{name}-%{version}.tar.gz
 # Source0-md5:	1b07f7ae2f3af3eb6ec12361e0a4d73c
-BuildRequires:	procps-devel >= 3.1.11-3
+Patch0:		%{name}-procps.patch
+BuildRequires:	procps-devel >= 3.2.0
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
@@ -25,11 +26,14 @@ informacjê na temat kontrolowanego procesu.
 
 %prep
 %setup -q
+%patch0 -p1
 
 %build
-%configure
+# not autoconf-generated
+./configure
 
-%{__make} CC="%{__cc} %{rpmcflags}"
+%{__make} \
+	CC="%{__cc} %{rpmcflags}"
 
 %install
 rm -rf $RPM_BUILD_ROOT
