@@ -2,11 +2,10 @@ Summary:	Process Information Utilities
 Summary(pl):	Narzêdzie Informuj±ce o Procesach
 Name:		pTools
 Version:	0.1
-Release:	1
+Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.cs.fsu.edu/~oberther/pTools/%{name}-%{version}.tar.gz
-Source1:	http://web.hexapodia.org/~adi/pmap.c
 URL:		http://www.cs.fsu.edu/~oberther/pTools/
 BuildRequires:	procps-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -30,7 +29,6 @@ informacjê na temat kontrolowanego procesu.
 %configure
 
 %{__make} CC="%{__cc} %{rpmcflags}"
-%{__cc} %{rpmcflags} %{rpmldflags} %{SOURCE1} -o pmap
 
 %install
 rm -rf $RPM_BUILD_ROOT
@@ -43,8 +41,6 @@ for i in src/*; do
 	[ ! -f "$p" ] && continue
 	cp $p $RPM_BUILD_ROOT%{_bindir}
 done
-
-install pmap $RPM_BUILD_ROOT%{_bindir}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
