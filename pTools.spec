@@ -6,6 +6,7 @@ Release:	2
 License:	GPL
 Group:		Applications/System
 Source0:	http://www.cs.fsu.edu/~oberther/pTools/%{name}-%{version}.tar.gz
+# Source0-md5:	650d8922b16f8381f7a44a6509b12206
 URL:		http://www.cs.fsu.edu/~oberther/pTools/
 BuildRequires:	procps-devel
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
