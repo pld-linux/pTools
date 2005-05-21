@@ -2,7 +2,7 @@ Summary:	Process Information Utilities
 Summary(pl):	Narzêdzie Informuj±ce o Procesach
 Name:		pTools
 Version:	0.1
-Release:	7
+Release:	8
 License:	GPL
 Group:		Applications/System
 #Source0:	http://www.cs.fsu.edu/~oberther/pTools/%{name}-%{version}.tar.gz
