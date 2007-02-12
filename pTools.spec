@@ -1,5 +1,5 @@
 Summary:	Process Information Utilities
-Summary(pl):	Narzêdzie Informuj±ce o Procesach
+Summary(pl.UTF-8):   NarzÄ™dzie InformujÄ…ce o Procesach
 Name:		pTools
 Version:	0.1
 Release:	9
@@ -18,11 +18,11 @@ Sun Microsystems /usr/proc/bin/ toolset. Each of the tools will behave
 in a similiar manner and return the same relevent information for the
 inspected process.
 
-%description -l pl
-Projekt pTools jest prób± stworzenia duplikatu funkcjonalno¶ci zbioru
-narzêdzi /usr/proc/bin firmy Sun Microsystems. Ka¿de z narzêdzi bêdzie
-zachowywa³o siê w podobny sposób oraz zwraca³o t± sam± istotn±
-informacjê na temat kontrolowanego procesu.
+%description -l pl.UTF-8
+Projekt pTools jest prÃ³bÄ… stworzenia duplikatu funkcjonalnoÅ›ci zbioru
+narzÄ™dzi /usr/proc/bin firmy Sun Microsystems. KaÅ¼de z narzÄ™dzi bÄ™dzie
+zachowywaÅ‚o siÄ™ w podobny sposÃ³b oraz zwracaÅ‚o tÄ… samÄ… istotnÄ…
+informacjÄ™ na temat kontrolowanego procesu.
 
 %prep
 %setup -q
