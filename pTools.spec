@@ -1,5 +1,5 @@
 Summary:	Process Information Utilities
-Summary(pl.UTF-8):   Narzędzie Informujące o Procesach
+Summary(pl.UTF-8):	Narzędzie Informujące o Procesach
 Name:		pTools
 Version:	0.1
 Release:	9
